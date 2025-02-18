@@ -84,6 +84,15 @@ export default {
             defaultValue: [],
             section: "settings",
         },
+        generateBlocksButton: {
+            label: {
+                en: "Generate Blocks",
+            },
+            type: "Button",
+            section: "settings",
+            defaultValue: null,
+            onClick: "generateBlocks",
+        },
         blockKey: {
             hidden: (content, sidepanelContent, boundProps) =>
                 !showObjectPropertyPath("blocks", { content, boundProps }),
